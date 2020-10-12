@@ -1,0 +1,76 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+     "responses": ["I can give you information regarding PEC (Punjab Engineering College)", "Offering support and information about PEC (Punjab Engineering College)"],
+     "context": [""]
+    },
+    {"tag": "Director",
+     "patterns": ["Who is the director of pec?", " Director of pec", " who is Dheeraj Sanghi ?","Pec is lead by Whom?","who is Head of pec?"," who is director of Punjab Engineering College"],
+     "responses": ["The Punjab Engineering College (Deemed to be University) is led by Director, Prof. Dheeraj Sanghi"],
+     "context": [""]
+    },
+    {"tag": "ranking",
+     "patterns": ["what is the rating of PEC?", "MHRD rating of pec", "pec rating", "Punjab Engineering College rating","Ranking of pec", "what is Punjab Engineering College Rank?" ],
+     "responses": ["According to the recent National Institutional Ranking Framework report by MHRD, GOI, PEC was ranked 38 among all the engineering institutes in India."],
+     "context": [""]
+    },
+    {"tag": "alumni",
+     "patterns": ["who are Pec alumni?", " Notable Punjab engineering college Alumni","pec passout","who are pec famous alumni?","Another Alumni","Other Alumni" ],
+     "responses": ["Monte Ahuja (1967 - Mechanical ): Monte Ahuja is a self-made entrepreneur, philanthropist, avid golfer, and consummate family man. He graduated from PEC in 1967 (mechanical) and from Ohio State University in 1970 with a Master's Degree in Mechanical Engineering. ",
+        "Jaspal Singh Bhatti (1978-Electrical) : Jaspal Singh Bhatti (3 March 1955 – 25 October 2012) was an Indian television personalityfamous for his satirical take on the problems of the common man",
+    "Kaplana Chawla :First Indian woman in space. She completed her Bachelor of Engineering degree in Aeronautical Engineering at Punjab Engineering College at Chandigarhin 1982.",
+"Vanya Mishra :Vanya Mishra (born 27 February 1992) in Chandigarh was crowned the winner of Femina Miss India on March 30, 2012.She has completed her graduate programme in electrical engineering from PEC University of Technology in 2014.She was a member of Projection Design Club (PDC) in the college"],
+     "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {"tag": "website",
+     "patterns": ["PEC website"," what is punjab Engineering College Website","pec website","Conatact Pec"," Connect with Punjab Engineering College", " Email of Pec"," what is pec Email id?","pec mail ID?"],
+     "responses": ["website : www.pec.ac.in"],
+     "context": [""]
+    },
+    {"tag": "location",
+     "patterns": ["Where is PEC located?", " Pec address", " Punjab Enginering College Address", "Locate Pec", "pec location" ],
+     "responses": ["Punjab Engineering College (Deemed to be University), Sector 12, Chandigarh, 160012"],
+     "context": ["search_pharmacy_by_name"]
+    },
+    {"tag": "courses",
+     "patterns": ["what are the progrmmes offers in pec?", "what are course offerd in Pec","Branches in punjab Engineering College","Degree offered in pec","Btech branches in pec?"],
+     "responses": ["The Punjab Engineering College (Deemed to be University), Chandigarh offers four-year Bachelor degree programmes in Aerospace Engineering, Civil Engineering, Computer Science and Engineering, Electrical Engineering, Electronics and Communication Engineering, Mechanical Engineering, Materials and Metallurgical Engineering, Production and Industrial Engineering. Master of Technology is offered in Civil Engineering (Transportation Engineering), Civil Engineering (Water Resources Engineering), Civil Engineering (Structural Engineering), Civil Engineering (Environmental Engineering) – an interdisciplinary programme, Computer Science and Engineering, Computer Science and Engineering (Information Security) – a self-supporting programme, Electrical Engineering, Electronics Engineering (VLSI Design), Mechanical Engineering, Industrial Materials and Metallurgy, Production and Industrial Engineering, Total Quality Engineering and Management - a self-supporting, interdisciplinary programme and Industrial Design - a self-supporting, interdisciplinary programme. Visite https://www.pec.ac.in/programmes for more information"],
+     "context": [""]
+    },
+    {"tag": "hospital_search",
+     "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+     "responses": ["Please provide hospital name or location"],
+     "context": ["search_hospital_by_params"]
+    },
+    {"tag": "search_hospital_by_params",
+     "patterns": [],
+     "responses": ["Please provide hospital type"],
+     "context": ["search_hospital_by_type"]
+    },
+    {"tag": "search_hospital_by_type",
+     "patterns": [],
+     "responses": ["Loading hospital details"],
+     "context": [""]
+    }
+]
+}
